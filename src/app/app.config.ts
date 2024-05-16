@@ -8,11 +8,13 @@ import {
   SearchOutline,
   StepBackwardOutline,
 } from '@ant-design/icons-angular/icons';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideClientHydration(),
     provideRouter(appRoutes),
+    provideAnimations(),
     provideHttpClient(),
     importProvidersFrom(
       NzIconModule.forRoot([SearchOutline, StepBackwardOutline])
