@@ -1,4 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
-@import './../node_modules/ng-zorro-antd/ng-zorro-antd.less';
+@import './tailwind';
+@import './ng-zorro-antd';
 
-@border-radius-base: 0.5rem;
+// Ovverrides
+
+// #region FOR RESOLVING NG ZORRO AND TAILWIND CSS CONFLICT
+
+// https://stackoverflow.com/questions/60853067/how-to-solve-ant-design-base-css-and-tailwindcss-base-css-alignments-problem
+
+.anticon svg {
+  vertical-align: initial;
+}
+
+// #endregion

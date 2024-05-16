@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Tailwind CSS Customizations
+// !OR MAKE CUSTOM CLASS ?!
+// https://tailwindcss.com/docs/adding-custom-styles#adding-base-styles
+@layer base {
+  /* CUSTOMIZATION EXISTING CLASSES OR TAGS' STYLES */
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  /*  CUSTOM CLASS */
+  .sub-title {
+    @apply text-lg font-normal;
+  }
+}
